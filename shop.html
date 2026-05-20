@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – Velvet Vogue</title>
+  <link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img src="icon.png" alt="Velvet Vogue Icon" class="nav-icon" />
+      <span class="brand-name">Velvet Vogue</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="cart.html">🛒 Cart</a></li>
+      <li><a href="login.html" class="nav-login">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h1>Our Collection</h1>
+    <p>Find your perfect style from our latest range</p>
+  </section>
+
+  <!-- SHOP LAYOUT -->
+  <div class="shop-wrapper">
+
+    <!-- SIDEBAR FILTERS -->
+    <aside class="sidebar">
+      <h3 class="sidebar-title">Filter By</h3>
+
+      <!-- Category Filter -->
+      <div class="filter-group">
+        <span class="filter-label">Category</span>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" checked /> All</label></li>
+          <li><label><input type="checkbox" /> Shirts</label></li>
+          <li><label><input type="checkbox" /> Dresses</label></li>
+          <li><label><input type="checkbox" /> Trousers</label></li>
+        </ul>
+      </div>
+
+      <!-- Price Range Filter -->
+      <div class="filter-group">
+        <span class="filter-label">Price Range</span>
+        <ul class="filter-list">
+          <li><label><input type="radio" name="price" checked /> All Prices</label></li>
+          <li><label><input type="radio" name="price" /> Under Rs. 2,000</label></li>
+          <li><label><input type="radio" name="price" /> Rs. 2,000 – Rs. 4,000</label></li>
+          <li><label><input type="radio" name="price" /> Over Rs. 4,000</label></li>
+        </ul>
+      </div>
+
+      <!-- Size Filter -->
+      <div class="filter-group">
+        <span class="filter-label">Size</span>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" /> XS</label></li>
+          <li><label><input type="checkbox" checked /> S</label></li>
+          <li><label><input type="checkbox" /> M</label></li>
+          <li><label><input type="checkbox" /> L</label></li>
+          <li><label><input type="checkbox" /> XL</label></li>
+        </ul>
+      </div>
+
+      <button class="btn-filter">Apply Filters</button>
+    </aside>
+
+    <!-- PRODUCTS AREA -->
+    <main class="products-area">
+
+      <!-- SORT BAR -->
+      <div class="sort-bar">
+        <p class="result-count">Showing <strong>9</strong> products</p>
+        <div class="sort-wrap">
+          <label for="sort">Sort by:</label>
+          <select id="sort" class="sort-select">
+            <option>Newest</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Best Selling</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Shirt1.jpg" alt="Classic White Shirt" class="product-img" />
+            <span class="badge">New</span>
+          </div>
+          <div class="product-info">
+            <h3>Classic White Shirt</h3>
+            <p class="product-price">Rs. 2,499</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Shirt2.jpg" alt="Red Casual Shirt" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3>Red Casual Shirt</h3>
+            <p class="product-price">Rs. 2,999</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Dress1.jpg" alt="Summer Dress" class="product-img" />
+            <span class="badge sale">Sale</span>
+          </div>
+          <div class="product-info">
+            <h3>Summer Dress</h3>
+            <p class="product-price">Rs. 3,499</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Shirt3.jpg" alt="Navy Blue Polo" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3>Navy Blue Polo</h3>
+            <p class="product-price">Rs. 1,999</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Dress2.jpg" alt="Floral Midi Dress" class="product-img" />
+            <span class="badge">New</span>
+          </div>
+          <div class="product-info">
+            <h3>Floral Midi Dress</h3>
+            <p class="product-price">Rs. 4,499</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Trouser1.jpg" alt="Slim Fit Trousers" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3>Slim Fit Trousers</h3>
+            <p class="product-price">Rs. 3,299</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Shirt4.jpg" alt="Striped Linen Shirt" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3>Striped Linen Shirt</h3>
+            <p class="product-price">Rs. 2,799</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Dress3.jpg" alt="Evening Gown" class="product-img" />
+            <span class="badge sale">Sale</span>
+          </div>
+          <div class="product-info">
+            <h3>Evening Gown</h3>
+            <p class="product-price">Rs. 5,999</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Trouser2.jpg" alt="Casual Chinos" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3>Casual Chinos</h3>
+            <p class="product-price">Rs. 2,999</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- END PRODUCT GRID -->
+
+      <!-- PAGINATION -->
+      <div class="pagination">
+        <a href="#" class="page-btn active">1</a>
+        <a href="#" class="page-btn">2</a>
+        <a href="#" class="page-btn">3</a>
+        <a href="#" class="page-btn">›</a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="icon.png" alt="Velvet Vogue Icon" class="footer-icon" />
+        <span>Velvet Vogue</span>
+      </div>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Velvet Vogue. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

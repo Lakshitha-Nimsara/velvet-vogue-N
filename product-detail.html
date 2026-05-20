@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic White Shirt – Velvet Vogue</title>
+  <link rel="stylesheet" href="product-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img src="icon.png" alt="Velvet Vogue Icon" class="nav-icon" />
+      <span class="brand-name">Velvet Vogue</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="cart.html" class="nav-cart">🛒 Cart</a></li>
+      <li><a href="login.html" class="nav-login">Login</a></li>
+    </ul>
+  </nav>
+
+  <main class="product-wrapper">
+    <div class="detail-container">
+      
+      <div class="detail-left">
+        <div class="detail-img-wrap">
+          <img src="Shirt1.jpg" alt="Classic White Shirt" class="main-product-img" />
+        </div>
+      </div>
+
+      <div class="detail-right">
+        <h1 class="product-title">Classic White Shirt</h1>
+        <p class="product-price">Rs. 2,499</p>
+        
+        <p class="product-description">
+          A timeless wardrobe essential crafted from breathable premium cotton. Featuring a sharp crisp collar, buttoned cuffs, and a tailored slim fit profile, this shirt bridges the gap between clean casualwear and sophisticated formal environments seamlessly.
+        </p>
+
+        <div class="selection-group">
+          <span class="selection-label">Size:</span>
+          <div class="size-options">
+            <button class="size-btn">XS</button>
+            <button class="size-btn active">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+          </div>
+        </div>
+
+        <div class="selection-group">
+          <span class="selection-label">Colour:</span>
+          <div class="color-options">
+            <button class="color-circle white active" title="White"></button>
+            <button class="color-circle blue" title="Navy Blue"></button>
+            <button class="color-circle red" title="Red"></button>
+          </div>
+        </div>
+
+        <button class="btn-add-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <section class="related-section">
+      <h2 class="related-title">Related Products</h2>
+      
+      <div class="product-grid">
+        
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Shirt2.jpg" alt="Red Casual Shirt" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3>Red Casual Shirt</h3>
+            <p class="card-price">Rs. 2,999</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Shirt3.jpg" alt="Navy Blue Polo" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3>Navy Blue Polo</h3>
+            <p class="card-price">Rs. 1,999</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="Shirt4.jpg" alt="Striped Linen Shirt" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3>Striped Linen Shirt</h3>
+            <p class="card-price">Rs. 2,799</p>
+            <a href="product-detail.html" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="icon.png" alt="Velvet Vogue Icon" class="footer-icon" />
+        <span>Velvet Vogue</span>
+      </div>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Velvet Vogue. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Handle switching size item selection active states
+    const sizeButtons = document.querySelectorAll('.size-btn');
+    sizeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        sizeButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // Handle switching color choice elements active states
+    const colorCircles = document.querySelectorAll('.color-circle');
+    colorCircles.forEach(circle => {
+      circle.addEventListener('click', () => {
+        colorCircles.forEach(c => c.classList.remove('active'));
+        circle.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

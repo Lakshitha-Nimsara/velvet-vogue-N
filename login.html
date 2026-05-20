@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account – Velvet Vogue</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img src="icon.png" alt="Velvet Vogue Icon" class="nav-icon" />
+      <span class="brand-name">Velvet Vogue</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="cart.html" class="nav-cart">🛒 Cart</a></li>
+      <li><a href="login.html" class="nav-login active">Login</a></li>
+    </ul>
+  </nav>
+
+  <main class="login-wrapper">
+    <div class="login-container">
+      
+      <div class="login-tabs">
+        <button id="tab-login" class="tab-btn active">Login Tab</button>
+        <button id="tab-signup" class="tab-btn">Sign Up Tab</button>
+      </div>
+
+      <form class="login-form" action="#" method="POST">
+        
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email field" required />
+        </div>
+        
+        <div class="form-group">
+          <input type="password" id="password" name="password" placeholder="Password field" required />
+        </div>
+        
+        <div class="form-group" id="confirm-password-group" style="display: none;">
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password field" />
+        </div>
+        
+        <button type="submit" id="submit-btn" class="btn-account">Login Button</button>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="icon.png" alt="Velvet Vogue Icon" class="footer-icon" />
+        <span>Velvet Vogue</span>
+      </div>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Velvet Vogue. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const tabLogin = document.getElementById('tab-login');
+    const tabSignup = document.getElementById('tab-signup');
+    const confirmPasswordGroup = document.getElementById('confirm-password-group');
+    const confirmPasswordInput = document.getElementById('confirm-password');
+    const submitBtn = document.getElementById('submit-btn');
+
+    // Click on Login Tab
+    tabLogin.addEventListener('click', () => {
+      tabLogin.classList.add('active');
+      tabSignup.classList.remove('active');
+      confirmPasswordGroup.style.display = 'none'; // Hide confirm password
+      confirmPasswordInput.removeAttribute('required'); // Not mandatory for login
+      submitBtn.textContent = 'Login Button'; // Update text match wireframe
+    });
+
+    // Click on Sign Up Tab
+    tabSignup.addEventListener('click', () => {
+      tabSignup.classList.add('active');
+      tabLogin.classList.remove('active');
+      confirmPasswordGroup.style.display = 'block'; // Show confirm password
+      confirmPasswordInput.setAttribute('required', 'true'); // Make mandatory
+      submitBtn.textContent = 'Create Account Button'; // Update text match wireframe
+    });
+  </script>
+
+</body>
+</html>
